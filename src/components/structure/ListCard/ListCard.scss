@@ -5,30 +5,48 @@
 
     display: flex;
     align-items: baseline;
+    margin: 1px solid #006D77;
     margin-bottom: 2rem;
     margin-top: 2rem;
     background-color: $color-secondary;
     justify-content: flex-end;
     height: 100%;
-
+    border: 2px solid $color-primary;
+    border-radius: 10%;
+    background-color: #83C5BE;
+    text-decoration: none;
+    color: $color-font-default;
+ &-div{
+     display: flex;
+     align-items: center;
+     padding: .8rem;
+ }
  &-title{
     margin: 0 auto;
+    text-decoration: none;
+    font-size: 1.2vw;
  }   
  &-text{
     padding-right: 4vw;
     text-align: end;
     padding-left: 57vw;
+    font-size: 1.2vw;
  }
  &-info{
      padding-left: 5rem;
+     font-size: 1rem;
+     font-size: 1.2vw;
  }
  .high{
      color: $color-danger;
+     font-size: 1.2vw;
  }
  .mid{
      color: #ffd60a;
+     font-size: 1.2vw;
  }
  .low{
      color: $color-success;
+     font-size: 1.2vw;
  }
 }

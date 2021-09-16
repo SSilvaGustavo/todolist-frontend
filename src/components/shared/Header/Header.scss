@@ -1,0 +1,19 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/style.scss';
+
+.header{
+    width: 100%;
+    display: flex;
+    background-color: $color-primary;
+    color: $color-font-default;
+    .container{
+        @include container;
+    }
+    &-text{
+        align-self: center;
+        align-items: center;
+        display: flex;
+        font-size: 1vw;
+        justify-content: center;
+    }
+}

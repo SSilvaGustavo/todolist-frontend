@@ -1,0 +1,15 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/style.scss';
+
+.footer{
+    width: 100%;
+    margin: 0 auto;
+    margin: flex;
+    align-self: center;
+    text-align: center;
+    background-color: $color-primary;
+    color: $color-font-default;
+    .container{
+        @include container;
+    }
+}

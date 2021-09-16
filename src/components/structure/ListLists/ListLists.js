@@ -13,14 +13,13 @@ const List = () => {
   const getTask = async () => {
     const response = await Api.fetchGet();
     const data = await response.json();
-
     setTasks(data);
   };
 
   return (
     <div className="list">
       {tasks.map((task, index) => (
-        <ListCard task={task} key={index} />
+        <ListCard className="list-item"task={task} key={index._id} />
       ))}
     </div>
   );

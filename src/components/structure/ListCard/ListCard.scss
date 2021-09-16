@@ -1,0 +1,34 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/style.scss';
+
+.card{
+
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: $color-secondary;
+    justify-content: flex-end;
+    height: 100%;
+
+ &-title{
+    margin: 0 auto;
+ }   
+ &-text{
+    padding-right: 4vw;
+    text-align: end;
+    padding-left: 57vw;
+ }
+ &-info{
+     padding-left: 5rem;
+ }
+ .high{
+     color: $color-danger;
+ }
+ .mid{
+     color: #ffd60a;
+ }
+ .low{
+     color: $color-success;
+ }
+}

@@ -1,0 +1,7 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/style.scss';
+
+.add{
+    @include container;
+    height: 100%;
+}

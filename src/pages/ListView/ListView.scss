@@ -1,0 +1,20 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/style.scss';
+
+.view {
+    @include container;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 5%;
+    &-info {
+      width: 48%;
+      &-text {
+        font-size: 20px;
+        line-height: 25px;
+        color: $color-primary;
+      }
+    }
+    
+  }

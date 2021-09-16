@@ -42,33 +42,33 @@ const ListAdd = (props) => {
                 </div>
                 <div className="add-form-group">
                     <label htmlFor="Descricao" className="add-form-group-label">Descricao</label>
-                    <input className="add-form-group-input" name="descricao" id="descricao" type="text" />
+                    <textarea  row ="10" col="10" warp="soft" className="add-form-group-input" name="descricao" id="descricao" type="text" />
                 </div>
-                <div>
+                <div className="add-form-group">
                     <label htmlFor="Prioridade" className="add-form-group-label">Prioridade</label>
-                    <select className="add-form-group-select" name="Prioridade">
-                        <option className="add-form-group-option" value="Baixa"></option>
-                        <option className="add-form-group-option" value="Alta">Alta</option>
-                        <option className="add-form-group-option" value="Média">Média</option>
-                        <option className="add-form-group-option" value="Baixa">Baixa</option>
+                    <select className="add-form-group-select" name="prioridade">
+                        <option className="add-form-group-select-option" value="Baixa"></option>
+                        <option className="add-form-group-select-option" value="Alta">Alta</option>
+                        <option className="add-form-group-select-option" value="Média">Média</option>
+                        <option className="add-form-group-select-option" value="Baixa">Baixa</option>
                     </select>
                 </div>
                 <div className="add-form-group">
                     <label htmlFor="Status" className="add-form-group-label">Status</label>
-                    <select className="add-form-group-select" name="Status">
-                        <option className="add-form-group-option" value="Concluido"></option>
-                        <option className="add-form-group-option" value="A fazer">A fazer</option>
-                        <option className="add-form-group-option" value="Em andamento">Em andamento</option>
-                        <option className="add-form-group-option" value="Concluido">Concluido</option>
+                    <select className="add-form-group-select" name="status">
+                        <option className="add-form-group-select-option" value="Concluido"></option>
+                        <option className="add-form-group-select-option" value="A fazer">A fazer</option>
+                        <option className="add-form-group-select-option" value="Em andamento">Em andamento</option>
+                        <option className="add-form-group-select-option" value="Concluido">Concluido</option>
                     </select>
                 </div>
                 <div className="add-form-group">
                     <label htmlFor="Prazo" className="add-form-group-label">Prazo</label>
-                    <input className="add-form-group-input" name="prazo" id="prazo" type="date" />
+                    <input className="add-form-group-input-date" name="prazo" id="prazo" type="date" />
                 </div>
                 <div className="add-form-buttons">
-                    <button className="add-form-buttons-btn-cancel">Cancelar</button>
-                    <button className="add-form-buttons-btn-submit" type="submit">Enviar</button>
+                    <button className="add-form-buttons-cancel" >Cancelar</button>
+                    <button className="add-form-buttons-submit" type="submit">Enviar</button>
                 </div>
             </form>
         </section>

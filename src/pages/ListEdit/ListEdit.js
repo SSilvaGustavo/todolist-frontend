@@ -66,24 +66,22 @@ const ListEdit = (props) => {
             Prioridade
           </label>
           <select className="edit-form-group-select" name="prioridade" value={fields.prioridade} onChange={handleFieldsChange} id="prioridade">
-            <option className="edit-form-group-option" value="Baixa"></option>
-            <option className="edit-form-group-option" value="Alta">Alta</option>
-            <option className="edit-form-group-option" value="Média">Média</option>
-            <option className="edit-form-group-option" value="Baixa">Baixa</option>
+            <option className="edit-form-group-select-option" value="Baixa"></option>
+            <option className="edit-form-group-select-option" value="Alta">Alta</option>
+            <option className="edit-form-group-select-option" value="Média">Média</option>
+            <option className="edit-form-group-select-option" value="Baixa">Baixa</option>
         </select>
         </div>
         <div className="edit-form-group">
           <label htmlFor="Status" className="edit-form-group-label">
             Status
           </label>
-          <input
-            className="edit-form-group-input"
-            name="status"
-            value={fields.status}
-            onChange={handleFieldsChange}
-            id="status"
-            type="text"
-          />
+          <select className="edit-form-group-select" name="status" value={fields.status} onChange={handleFieldsChange} id="status">
+          <option className="add-form-group-select-option" value="Concluido"></option>
+                        <option className="add-form-group-select-option" value="A fazer">A fazer</option>
+                        <option className="add-form-group-select-option" value="Em andamento">Em andamento</option>
+                        <option className="add-form-group-select-option" value="Concluido">Concluido</option>
+        </select>
         </div>
         <div className="edit-form-group">
           <label htmlFor="Prazo" className="edit-form-group-label">
@@ -100,10 +98,10 @@ const ListEdit = (props) => {
         </div>
         <div className="edit-form-buttons">
             <Link to= {'/'}>
-          <button className="edit-form-buttons-btn-cancel">Cancelar</button>
+          <button className="edit-form-buttons-cancel">Cancelar</button>
           </Link>
-          <button className="edit-form-buttons-btn-submit" type="submit">
-            Enviar
+          <button className="edit-form-buttons-submit" type="submit">
+            Editar
           </button>
         </div>
       </form>

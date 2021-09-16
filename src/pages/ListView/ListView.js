@@ -48,15 +48,17 @@ const ListView = (props) => {
                 <p className="view-infos-text"><b>Status: </b>{task.status}</p>
                 <p className="view-infos-text"><b>Prazo: </b>{prazo}</p>
                 <p className="view-infos-text"><b>Data Criação: </b>{dataCriacao}</p>
-                <Link to={`/edit/${task._id}`}>
-                    <button className="view-buttons-edit">Editar</button>
-                </Link>
-                <button className="view-buttons-delete" onClick={onOpenModal}>Deletar</button>
-                <Modal open={open} onClose={onCloseModal} center>
-                    <p>DESEJAR EXCLUIR O ITEM?</p>
-                    <button className="view-buttons-no" onClick={handleDelete}>SIM</button>
-                    <button className="view-buttons-yes" onClick={onCloseModal}>NÃO</button>
-                </Modal>
+                <div className="view-infos-buttons">
+                    <Link to={`/edit/${task._id}`}>
+                        <button className="view-infos-buttons-edit">Editar</button>
+                    </Link>
+                    <button className="view-infos-buttons-delete" onClick={onOpenModal}>Deletar</button>
+                    <Modal open={open} onClose={onCloseModal} center>
+                        <p className="view-infos-buttons-delete-text">DESEJAR EXCLUIR O ITEM?</p>
+                        <button className="view-infos-buttons-delete-yes" onClick={handleDelete}>SIM</button>
+                        <button className="view-infos-buttons-delete-no" onClick={onCloseModal}>NÃO</button>
+                    </Modal>
+                </div>
             </div>
         </section>
     );

@@ -6,13 +6,35 @@
     display: grid;
     flex: 1;
     height: 100%;
-    &-title{
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
-    }
+    font-family: 'Playfair Display', serif;
     &-list{
         
     }
+    &-titlebox{
+        
+        &-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            font-size: 33px;
+        }
+        &-span{
+            display: flex;
+            width: 8vw;
+            height: 0vw;
+            font-size: 2vw;
+            left: 85vw;
+            position: relative;
+            top: 1vw;
+            cursor: pointer;
+            text-decoration: none;
+            color: $color-primary;
+            &:hover{
+                .rotate-center{animation:rotate-center .6s ease-in-out both}
+            }
+        }   
+    }
 }
+@keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}

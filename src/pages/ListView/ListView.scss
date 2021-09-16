@@ -8,13 +8,59 @@
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 5%;
-    &-info {
+    &-infos {
       width: 48%;
       &-text {
         font-size: 20px;
         line-height: 25px;
         color: $color-primary;
+        margin-bottom: 2vw;
+      }
+        &-buttons{
+          text-decoration: none;
+          display: flex;
+          justify-content: space-between;
+          text-decoration: none;
+          &-edit{
+            @include button;
+            background-color: $color-success;
+            color:$color-font-default;
+            text-decoration: none;
+            margin-right: 2vw
+          }
+          &-delete{
+            @include button;
+            background-color: $color-danger;
+            color:$color-font-default;
+            &-text{
+              font-size: 18px;
+              font-weight: 400;
+              font-style: italic;
+            }
+            &-no{
+              background-color: $color-danger;
+              color:$color-font-default;
+              padding: .5rem;
+              padding-right: 1rem;
+              padding-left: 1rem;
+              font-size: 13px;
+              border: none;
+              border-radius: 5%;
+              cursor: pointer;
+            }
+            &-yes{
+              background-color: $color-success;
+              color:$color-font-default;
+              margin-right: 6rem;
+              padding: .5rem;
+              padding-right: 1rem;
+              padding-left: 1rem;
+              font-size: 13px;
+              border: none;
+              border-radius: 5%;
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
-    
-  }

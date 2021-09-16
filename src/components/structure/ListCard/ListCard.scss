@@ -4,18 +4,15 @@
 .card{
 
     display: flex;
-    align-items: baseline;
-    margin: 1px solid #006D77;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    background-color: $color-secondary;
-    justify-content: flex-end;
     height: 100%;
-    border: 2px solid $color-primary;
-    border-radius: 10%;
-    background-color: #83C5BE;
+    border: 3px solid #22223b;
+    border-radius: 0%;
+    background-color: #4a4e69;
     text-decoration: none;
-    color: $color-font-default;
+    color: #ffff;
+    justify-content: flex-end;
  &-div{
      display: flex;
      align-items: center;
@@ -25,28 +22,39 @@
     margin: 0 auto;
     text-decoration: none;
     font-size: 1.2vw;
+    font-weight: 600;
+    text-transform: capitalize;
  }   
  &-text{
     padding-right: 4vw;
     text-align: end;
-    padding-left: 57vw;
+    padding-left: 52vw;
     font-size: 1.2vw;
+    font-weight: 600;
+    text-transform: capitalize;
  }
  &-info{
      padding-left: 5rem;
      font-size: 1rem;
      font-size: 1.2vw;
+     text-transform: capitalize;
  }
  .high{
      color: $color-danger;
      font-size: 1.2vw;
+     text-decoration: underline;
+     font-weight: 600;
  }
  .mid{
      color: #ffd60a;
      font-size: 1.2vw;
+     text-decoration: underline;
+     font-weight: 600;
  }
  .low{
      color: $color-success;
      font-size: 1.2vw;
+     text-decoration: underline;
+     font-weight: 600;
  }
 }

@@ -11,10 +11,10 @@ const ListCard = (props) => {
   return (
     <Link to={`/view/${task._id}`} className="card">
       <div className="card-div">
-        <h1 className="card-title">{task.tarefa}</h1>
-        <p className="card-text">{task.status}</p>
-        <span className={color}>{task.prioridade}</span>
-        <span className="card-info">{prazoLimite}</span>
+        <h1 name="tarefa" className="card-title">{task.tarefa}</h1>
+        <p name="status" className="card-text">{task.status}</p>
+        <span name="prioridade" className={color}>{task.prioridade}</span>
+        <span name="prazo" className="card-info">{prazoLimite}</span>
       </div>
     </Link>
   )

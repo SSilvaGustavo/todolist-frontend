@@ -6,6 +6,8 @@
     display: flex;
     background-color: $color-primary;
     color: $color-font-default;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
     .container{
         @include container;
     }
@@ -13,7 +15,12 @@
         align-self: center;
         align-items: center;
         display: flex;
-        font-size: 1vw;
+        font-size: 28px;
         justify-content: center;
+        text-decoration: underline $color-font-default;
+        font-weight: 600;
+        font-style: italic;
+        text-decoration: none;
+        color: $color-font-default;
     }
 }

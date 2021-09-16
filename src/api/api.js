@@ -1,5 +1,5 @@
 export const Api = {
-    url: "http://localhost:3001/list",
+    url: "https://todolist-gss.herokuapp.com/list",
     fetchGet: () => fetch(Api.url),
 
     fetchGetById: (id) => fetch(Api.url + '/tarefa/' + id),
